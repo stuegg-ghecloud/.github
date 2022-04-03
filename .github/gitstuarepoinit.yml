@@ -1,14 +1,15 @@
+#this file must be named gitstuarepoinit.yml and must be located in a repository 
+# named .github in a folder named .github
+# example file path: https://github.com/DadsTaxi/.github/tree/main/.github
+
+# This can be expanded later however the only values which are set on a new repository or an existing repository on which the GitHub App is installed is:
+# - required_approving_review_count
+#
+
 branches:
-  - name: *
-    # https://docs.github.com/en/rest/reference/repos#update-branch-protection
-    # Branch Protection settings. Set to null to disable
+  - name: null
     protection:
-      restrictions: null
-      required_status_checks: null
       enforce_admins: null
       required_pull_request_reviews:
-        dismissal_restrictions": {}
-        dismiss_stale_reviews: false
-        require_code_owner_reviews: true
-        # The number of approvals required. (1-6)
-        required_approving_review_count: 1
+        required_approving_review_count: 2
+      
