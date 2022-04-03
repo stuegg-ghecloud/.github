@@ -1,0 +1,14 @@
+branches:
+  - name: *
+    # https://docs.github.com/en/rest/reference/repos#update-branch-protection
+    # Branch Protection settings. Set to null to disable
+    protection:
+      restrictions: null
+      required_status_checks: null
+      enforce_admins: null
+      required_pull_request_reviews:
+        dismissal_restrictions": {}
+        dismiss_stale_reviews: false
+        require_code_owner_reviews: true
+        # The number of approvals required. (1-6)
+        required_approving_review_count: 1
